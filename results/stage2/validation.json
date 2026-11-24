@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "checks": {
+    "vacuum_all_errors_below_1e-8_SI": true,
+    "immediate_ground_contact_zero_or_negative_vertical_speed": true,
+    "vertical_drag_all_errors_below_1e-6_SI": true,
+    "landing_error_order_above_3_on_last_two_halvings": true,
+    "dt_0.01_position_error_below_1e-4_m": true,
+    "dt_0.01_landing_time_error_below_1e-5_s": true
+  },
+  "vacuum_errors": {
+    "rising": {
+      "max_position_error_m": 7.232657794854416e-15,
+      "max_velocity_error_m_s": 7.105427357601002e-15,
+      "apex_time_error_s": 2.220446049250313e-16,
+      "apex_position_error_m": 2.531698018113677e-15,
+      "landing_time_error_s": 4.440892098500626e-16,
+      "landing_position_error_m": 7.119291619286993e-15,
+      "analytic_model_max_position_error_m": 0.0,
+      "analytic_model_max_velocity_error_m_s": 0.0,
+      "analytic_model_landing_time_error_s": 0.0,
+      "analytic_model_touchdown_error_m": 0.0,
+      "analytic_model_impact_velocity_error_m_s": 0.0
+    },
+    "horizontal": {
+      "max_position_error_m": 9.650801630464006e-16,
+      "max_velocity_error_m_s": 2.6645352591003757e-15,
+      "apex_time_error_s": 0.0,
+      "apex_position_error_m": 0.0,
+      "landing_time_error_s": 0.0,
+      "landing_position_error_m": 9.155133597044475e-16,
+      "analytic_model_max_position_error_m": 0.0,
+      "analytic_model_max_velocity_error_m_s": 0.0,
+      "analytic_model_landing_time_error_s": 0.0,
+      "analytic_model_touchdown_error_m": 0.0,
+      "analytic_model_impact_velocity_error_m_s": 0.0
+    },
+    "descending": {
+      "max_position_error_m": 1.2462222543165673e-15,
+      "max_velocity_error_m_s": 5.329070518200751e-15,
+      "apex_time_error_s": 0.0,
+      "apex_position_error_m": 0.0,
+      "landing_time_error_s": 1.1102230246251565e-16,
+      "landing_position_error_m": 6.661338147750939e-16,
+      "analytic_model_max_position_error_m": 0.0,
+      "analytic_model_max_velocity_error_m_s": 0.0,
+      "analytic_model_landing_time_error_s": 0.0,
+      "analytic_model_touchdown_error_m": 0.0,
+      "analytic_model_impact_velocity_error_m_s": 0.0
+    },
+    "rising_from_ground": {
+      "max_position_error_m": 9.278544046888106e-15,
+      "max_velocity_error_m_s": 1.0658141036401503e-14,
+      "apex_time_error_s": 4.440892098500626e-16,
+      "apex_position_error_m": 3.371588483749347e-15,
+      "landing_time_error_s": 1.1102230246251565e-15,
+      "landing_position_error_m": 1.887379141862766e-15,
+      "analytic_model_max_position_error_m": 0.0,
+      "analytic_model_max_velocity_error_m_s": 0.0,
+      "analytic_model_landing_time_error_s": 0.0,
+      "analytic_model_touchdown_error_m": 0.0,
+      "analytic_model_impact_velocity_error_m_s": 0.0
+    },
+    "apex_and_landing_in_first_step": {
+      "max_position_error_m": 2.220717083251841e-16,
+      "max_velocity_error_m_s": 1.1102230246251565e-16,
+      "apex_time_error_s": 6.938893903907228e-18,
+      "apex_position_error_m": 3.469446951953614e-18,
+      "landing_time_error_s": 0.0,
+      "landing_position_error_m": 0.0,
+      "analytic_model_max_position_error_m": 0.0,
+      "analytic_model_max_velocity_error_m_s": 0.0,
+      "analytic_model_landing_time_error_s": 0.0,
+      "analytic_model_touchdown_error_m": 0.0,
+      "analytic_model_impact_velocity_error_m_s": 0.0
+    }
+  },
+  "vertical_drag_errors": {
+    "max_position_error_m": 2.3125688919378717e-08,
+    "max_velocity_error_m_s": 3.195175323628119e-08,
+    "apex_time_error_s": 8.924971872659171e-12,
+    "apex_position_error_m": 2.6969848576641198e-09,
+    "landing_time_error_s": 3.6877720877015463e-09,
+    "landing_position_error_m": 0.0
+  },
+  "step_study_reference": {
+    "initial_position_m": [
+      -5.4,
+      -1.0,
+      2.4
+    ],
+    "initial_velocity_m_s": [
+      23.0,
+      3.0,
+      17.0
+    ],
+    "drag_per_m": 0.217,
+    "method": "SciPy DOP853",
+    "rtol": 1e-12,
+    "atol": 1e-13,
+    "max_step_s": 0.02,
+    "apex_time_s": 0.6186478636104978,
+    "apex_position_m": [
+      0.572369563153991,
+      -0.22099527437121907,
+      5.557716903153301
+    ],
+    "landing_time_s": 1.9550335318808125,
+    "landing_position_m": [
+      4.21740490612116,
+      0.2544441181897158,
+      3.5388358909926865e-16
+    ]
+  },
+  "step_study_landing_error_orders": [
+    4.397157897242299,
+    4.209584476512071,
+    4.10773866766471
+  ]
+}

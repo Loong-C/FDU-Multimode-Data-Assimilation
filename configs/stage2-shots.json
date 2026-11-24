@@ -1,0 +1,13 @@
+{
+  "dt_s": 0.01,
+  "k_m_inv": 0.217,
+  "comparison_shot": "clear",
+  "comparison_k_m_inv": [0.0, 0.15, 0.217, 0.30],
+  "shots": {
+    "clear": {"position_m": [-5.3, -1.7, 2.6], "velocity_m_s": [33.0, 8.0, 25.0]},
+    "lift":  {"position_m": [-1.0, 1.55, 0.7], "velocity_m_s": [12.0, -4.5, 14.0]},
+    "drop":  {"position_m": [-4.7, 1.45, 2.8], "velocity_m_s": [13.0, -0.6, 1.2]},
+    "drive": {"position_m": [-2.6, -1.7, 1.55], "velocity_m_s": [20.5, 9.2, 2.8]},
+    "smash": {"position_m": [-3.8, 0.8, 3.0], "velocity_m_s": [48.0, -13.0, -13.0]}
+  }
+}
