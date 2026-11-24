@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+data/raw/
+data/work/
+artifacts/previews/
+artifacts/stage1/
+artifacts/stage1_supplements/
