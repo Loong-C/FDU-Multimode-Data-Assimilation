@@ -1,0 +1,33 @@
+{
+  "match": "Kento_MOMOTA_CHOU_Tien_Chen_Fuzhou_Open_2019_Finals",
+  "tracknet_match": "Professional/match4",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "net_post_tops_px": {"left": [368, 323], "right": [907, 322]},
+  "net_reference": "2_02_05 frame 0, project visual estimate",
+  "overlay_preview": {"rally": "1_03_02", "frame": 147},
+  "rallies": {
+    "1_03_02": {
+      "source_frames": 358,
+      "end_frame_exclusive": 358,
+      "source_frame_at_local_zero": 13925,
+      "reviewed_contacts": {"1": 2, "7": 121, "8": 146, "9": 157, "16": 321},
+      "export_strokes": [7, 8]
+    },
+    "2_02_05": {
+      "source_frames": 476,
+      "end_frame_exclusive": 475,
+      "source_frame_at_local_zero": 51261,
+      "reviewed_contacts": {"1": 23, "2": 39, "4": 79, "5": 119},
+      "export_strokes": [1, 4]
+    },
+    "3_18_17": {
+      "source_frames": 556,
+      "end_frame_exclusive": 556,
+      "source_frame_at_local_zero": 131231,
+      "reviewed_contacts": {"1": 18, "2": 46, "11": 220, "12": 244, "14": 302, "15": 325, "24": 526},
+      "export_strokes": [11, 14]
+    }
+  }
+}

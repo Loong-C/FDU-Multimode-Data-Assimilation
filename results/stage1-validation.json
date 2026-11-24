@@ -1,0 +1,413 @@
+{
+  "passed": true,
+  "rallies": {
+    "1_03_02": {
+      "source_frames_decoded": 358,
+      "usable_frames": 358,
+      "missing": {
+        "not_visible": 52
+      },
+      "events": 16,
+      "ball_alignment": {
+        "n_shared_centers": 173,
+        "positive_gray_residual": {
+          "-2": {
+            "median": 2.0,
+            "mean": 5.05
+          },
+          "-1": {
+            "median": 3.0,
+            "mean": 6.39
+          },
+          "0": {
+            "median": 119.0,
+            "mean": 117.86
+          },
+          "1": {
+            "median": 5.0,
+            "mean": 7.95
+          },
+          "2": {
+            "median": 4.0,
+            "mean": 5.54
+          }
+        }
+      },
+      "videos": {
+        "rally.mp4": {
+          "frames_decoded": 358,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.0,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.07,
+            0.0,
+            16.11
+          ],
+          "boundary_motion_error": {
+            "0": [
+              0.0,
+              0.0,
+              18.44
+            ],
+            "357": [
+              20.94,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "overlay.mp4": {
+          "frames_decoded": 358,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 3.16,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.28,
+            2.4,
+            16.34
+          ],
+          "boundary_motion_error": {
+            "0": [
+              1.61,
+              1.61,
+              18.56
+            ],
+            "357": [
+              20.72,
+              2.18,
+              2.18
+            ]
+          }
+        },
+        "shots/07_clear.mp4": {
+          "frames_decoded": 25,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.17,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.52,
+            0.74,
+            16.68
+          ],
+          "boundary_motion_error": {
+            "121": [
+              15.97,
+              0.59,
+              15.65
+            ],
+            "145": [
+              16.02,
+              0.74,
+              17.3
+            ]
+          }
+        },
+        "shots/08_smash.mp4": {
+          "frames_decoded": 11,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.19,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.94,
+            0.76,
+            16.65
+          ],
+          "boundary_motion_error": {
+            "146": [
+              16.85,
+              0.64,
+              17.7
+            ],
+            "156": [
+              16.38,
+              0.8,
+              16.15
+            ]
+          }
+        }
+      }
+    },
+    "2_02_05": {
+      "source_frames_decoded": 476,
+      "usable_frames": 475,
+      "missing": {
+        "not_visible": 97,
+        "no_label_row": 8
+      },
+      "events": 18,
+      "ball_alignment": {
+        "n_shared_centers": 176,
+        "positive_gray_residual": {
+          "-2": {
+            "median": 2.0,
+            "mean": 8.26
+          },
+          "-1": {
+            "median": 3.0,
+            "mean": 10.16
+          },
+          "0": {
+            "median": 84.0,
+            "mean": 92.11
+          },
+          "1": {
+            "median": 4.0,
+            "mean": 12.96
+          },
+          "2": {
+            "median": 3.0,
+            "mean": 10.12
+          }
+        }
+      },
+      "videos": {
+        "rally.mp4": {
+          "frames_decoded": 475,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.24,
+          "motion_error_lags_minus1_zero_plus1": [
+            15.24,
+            0.73,
+            15.37
+          ],
+          "boundary_motion_error": {
+            "474": [
+              0.84,
+              0.25,
+              25.19
+            ]
+          }
+        },
+        "overlay.mp4": {
+          "frames_decoded": 475,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 3.18,
+          "motion_error_lags_minus1_zero_plus1": [
+            15.52,
+            2.5,
+            15.67
+          ],
+          "boundary_motion_error": {
+            "474": [
+              2.36,
+              1.88,
+              24.81
+            ]
+          }
+        },
+        "shots/01_short_service.mp4": {
+          "frames_decoded": 16,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.18,
+          "motion_error_lags_minus1_zero_plus1": [
+            12.72,
+            0.74,
+            13.51
+          ],
+          "boundary_motion_error": {
+            "23": [
+              10.54,
+              0.53,
+              11.55
+            ],
+            "38": [
+              15.0,
+              0.83,
+              15.74
+            ]
+          }
+        },
+        "shots/04_lob.mp4": {
+          "frames_decoded": 40,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.16,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.83,
+            0.73,
+            16.76
+          ],
+          "boundary_motion_error": {
+            "79": [
+              17.75,
+              0.6,
+              16.66
+            ],
+            "118": [
+              15.95,
+              0.83,
+              16.48
+            ]
+          }
+        }
+      }
+    },
+    "3_18_17": {
+      "source_frames_decoded": 556,
+      "usable_frames": 556,
+      "missing": {
+        "not_visible": 113
+      },
+      "events": 24,
+      "ball_alignment": {
+        "n_shared_centers": 244,
+        "positive_gray_residual": {
+          "-2": {
+            "median": 2.0,
+            "mean": 6.12
+          },
+          "-1": {
+            "median": 2.0,
+            "mean": 8.42
+          },
+          "0": {
+            "median": 103.5,
+            "mean": 111.67
+          },
+          "1": {
+            "median": 4.0,
+            "mean": 9.01
+          },
+          "2": {
+            "median": 2.0,
+            "mean": 5.87
+          }
+        }
+      },
+      "videos": {
+        "rally.mp4": {
+          "frames_decoded": 556,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.0,
+          "motion_error_lags_minus1_zero_plus1": [
+            15.75,
+            0.0,
+            15.77
+          ],
+          "boundary_motion_error": {
+            "0": [
+              0.0,
+              0.0,
+              15.5
+            ],
+            "555": [
+              21.07,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "overlay.mp4": {
+          "frames_decoded": 556,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 3.17,
+          "motion_error_lags_minus1_zero_plus1": [
+            15.94,
+            2.4,
+            16.0
+          ],
+          "boundary_motion_error": {
+            "0": [
+              1.74,
+              1.74,
+              15.63
+            ],
+            "555": [
+              20.83,
+              2.84,
+              2.84
+            ]
+          }
+        },
+        "shots/11_net_shot.mp4": {
+          "frames_decoded": 24,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.15,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.21,
+            0.75,
+            16.15
+          ],
+          "boundary_motion_error": {
+            "220": [
+              18.11,
+              0.6,
+              16.76
+            ],
+            "243": [
+              16.15,
+              0.8,
+              16.87
+            ]
+          }
+        },
+        "shots/14_drop.mp4": {
+          "frames_decoded": 23,
+          "fps": 25,
+          "size": [
+            1280,
+            720
+          ],
+          "source_gray_mae_max": 0.17,
+          "motion_error_lags_minus1_zero_plus1": [
+            16.89,
+            0.71,
+            16.93
+          ],
+          "boundary_motion_error": {
+            "302": [
+              16.33,
+              0.6,
+              16.99
+            ],
+            "324": [
+              18.26,
+              0.69,
+              16.69
+            ]
+          }
+        }
+      }
+    }
+  }
+}
