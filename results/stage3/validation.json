@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checks": {
+    "general_projective_camera": true,
+    "noiseless_heldout_fit": true,
+    "radial_inverse": true,
+    "planar_degeneracy": true,
+    "visibility": true,
+    "forward_export": true
+  },
+  "general_projection": {
+    "max_projection_error_px": 3.074277920629802e-13,
+    "max_ray_distance_m": 2.502020048080049e-14
+  },
+  "synthetic_fit": {
+    "training_count": 12,
+    "heldout_count": 6,
+    "cases": [
+      {
+        "k1_true": 0.0,
+        "k1_fitted": 0.0,
+        "focal_error_px": 2.2737367544323206e-13,
+        "center_error_m": 6.715151636016576e-14,
+        "heldout_max_error_px": 2.3437142008433856e-13,
+        "heldout_max_ray_distance_m": 5.914894855071548e-14
+      },
+      {
+        "k1_true": -0.12,
+        "k1_fitted": -0.12000000000000068,
+        "focal_error_px": 1.0231815394945443e-12,
+        "center_error_m": 8.064836119566994e-14,
+        "heldout_max_error_px": 2.6812987050722663e-13,
+        "heldout_max_ray_distance_m": 3.9581280395774587e-14
+      },
+      {
+        "k1_true": 0.15,
+        "k1_fitted": 0.15000000000000127,
+        "focal_error_px": 5.684341886080801e-13,
+        "center_error_m": 7.339170430538501e-14,
+        "heldout_max_error_px": 2.8421709430404007e-13,
+        "heldout_max_ray_distance_m": 4.469444067494197e-14
+      }
+    ]
+  },
+  "coplanar_ambiguity": {
+    "planar_fit_rejected": true,
+    "planar_design_rank": 8,
+    "noncoplanar_design_rank": 11,
+    "floor_max_difference_px": 1.2710574864626038e-13,
+    "off_floor_max_difference_px": 64.14435277068215
+  },
+  "visibility": {
+    "behind_or_on_plane": 7,
+    "in_front_out_of_image": 6,
+    "in_image": 2
+  },
+  "exported_virtual_camera": {
+    "samples": 644,
+    "shot_count": 5,
+    "in_image": 644,
+    "max_opencv_projection_error_px": 3.0685246886277446e-13
+  }
+}

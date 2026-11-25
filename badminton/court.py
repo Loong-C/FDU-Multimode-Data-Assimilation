@@ -43,3 +43,15 @@ def net_height(y):
     height = NET_CENTER_HEIGHT + (NET_POST_HEIGHT - NET_CENTER_HEIGHT) * (y / DOUBLES_HALF_WIDTH) ** 2
     result = np.where(np.abs(y) <= DOUBLES_HALF_WIDTH, height, np.nan)
     return result.item() if result.ndim == 0 else result
+
+
+def court_wireframe():
+    """World-space polylines for projecting the markings, net edges and posts."""
+    lines = {name: np.linspace(a, b, 25) for name, (a, b) in floor_lines().items()}
+    y = np.linspace(-DOUBLES_HALF_WIDTH, DOUBLES_HALF_WIDTH, 51)
+    top = np.column_stack((np.zeros_like(y), y, net_height(y)))
+    lines["net_top"] = top
+    lines["net_bottom"] = top - (0, 0, NET_DEPTH)
+    for name, y_post in (("post_left", DOUBLES_HALF_WIDTH), ("post_right", -DOUBLES_HALF_WIDTH)):
+        lines[name] = np.linspace((0, y_post, 0), (0, y_post, NET_POST_HEIGHT), 15)
+    return lines
