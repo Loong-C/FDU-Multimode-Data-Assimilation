@@ -1,0 +1,42 @@
+{
+  "model": {
+    "max_abs_log_prob_discrepancy": 5.954420902298807e-05,
+    "joint_dimension": 7,
+    "starts": 3,
+    "observation_covariance": "correlated, varying by frame",
+    "soft_measurements_checked": [
+      "player_xy",
+      "height",
+      "landing_xy",
+      "landing_time"
+    ]
+  },
+  "sampler_control": {
+    "target": "equal-weight 6D Gaussian mixture",
+    "known_positive_mass": 0.5,
+    "sampled_positive_mass": 0.5032142857142857,
+    "identified_marginal_peaks": [
+      -3.460637912860937,
+      3.4462350725544333
+    ]
+  },
+  "representative_mcmc": {
+    "representative_cases": 2,
+    "independently_integrated_draws": 36,
+    "max_abs_landing_component_discrepancy": 5.3892994955617723e-08
+  },
+  "study": {
+    "completed_fits": 136,
+    "failed_fits": 0,
+    "separate_coverage_design_trials": 48,
+    "max_abs_map_metric_discrepancy": 7.979431147220328e-06,
+    "coverage_counts_checked": 22,
+    "sampler_quantile_discrepancy_as_fraction_of_90pct_width": {
+      "short_launch_k": 0.03649433403503279,
+      "short_launch_landing_x": 0.01143308989092813,
+      "full_launch_k": 0.014891053689733653,
+      "full_launch_landing_x": 0.033610772405169645
+    }
+  },
+  "passed": true
+}
