@@ -1,0 +1,221 @@
+{
+  "decoded_frames": 476,
+  "checked_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 475
+  },
+  "anchor_ids": [
+    "far_baseline_outer_left",
+    "far_baseline_outer_right",
+    "near_baseline_outer_left",
+    "near_baseline_outer_right",
+    "near_short_service_outer_left",
+    "near_short_service_outer_right",
+    "far_short_service_outer_left",
+    "far_short_service_outer_right"
+  ],
+  "min_matched_anchors": 8,
+  "max_median_anchor_displacement_px": 0.03971475065425861,
+  "max_centre_translation_px": 0.025236661165998677,
+  "max_abs_scale_change": 6.264524660859472e-05,
+  "outside_segment": {
+    "475": {
+      "matched": 0
+    }
+  },
+  "remeasured_pixel_centres": {
+    "0": {
+      "far_baseline_outer_left": [
+        408.68,
+        308.48
+      ],
+      "far_baseline_inner_left": [
+        443.75,
+        308.34
+      ],
+      "far_baseline_inner_right": [
+        829.81,
+        307.21
+      ],
+      "far_baseline_outer_right": [
+        863.91,
+        306.98
+      ],
+      "far_short_service_outer_left": [
+        382.79,
+        406.37
+      ],
+      "far_short_service_inner_left": [
+        421.89,
+        406.22
+      ],
+      "far_short_service_middle": [
+        637.31,
+        405.29
+      ],
+      "far_short_service_inner_right": [
+        853.5,
+        404.74
+      ],
+      "far_short_service_outer_right": [
+        892.68,
+        404.67
+      ],
+      "near_short_service_outer_left": [
+        354.31,
+        510.74
+      ],
+      "near_short_service_inner_left": [
+        397.82,
+        510.27
+      ],
+      "near_short_service_middle": [
+        638.37,
+        508.81
+      ],
+      "near_short_service_outer_right": [
+        922.85,
+        508.62
+      ],
+      "near_long_service_inner_left": [
+        367.23,
+        639.73
+      ],
+      "near_long_service_middle": [
+        639.82,
+        637.29
+      ],
+      "near_long_service_inner_right": [
+        911.93,
+        637.8
+      ],
+      "near_baseline_outer_left": [
+        308.71,
+        670.24
+      ],
+      "near_baseline_middle": [
+        640.52,
+        666.19
+      ],
+      "near_baseline_inner_right": [
+        920.19,
+        667.14
+      ],
+      "near_baseline_outer_right": [
+        970.28,
+        667.74
+      ]
+    },
+    "55": {
+      "far_baseline_outer_left": [
+        409.15,
+        308.46
+      ],
+      "far_baseline_outer_right": [
+        864.48,
+        307.06
+      ],
+      "near_baseline_outer_left": [
+        309.46,
+        670.1
+      ],
+      "near_baseline_outer_right": [
+        968.69,
+        667.62
+      ],
+      "near_short_service_outer_left": [
+        354.19,
+        510.52
+      ],
+      "far_short_service_outer_right": [
+        892.58,
+        404.58
+      ]
+    },
+    "228": {
+      "far_baseline_outer_left": [
+        408.6,
+        308.55
+      ],
+      "far_baseline_outer_right": [
+        863.94,
+        307.06
+      ],
+      "near_baseline_outer_left": [
+        309.1,
+        670.07
+      ],
+      "near_baseline_outer_right": [
+        970.37,
+        667.69
+      ],
+      "near_short_service_outer_left": [
+        354.29,
+        510.63
+      ],
+      "far_short_service_outer_right": [
+        892.64,
+        404.64
+      ]
+    },
+    "430": {
+      "far_baseline_outer_left": [
+        409.43,
+        308.51
+      ],
+      "far_baseline_outer_right": [
+        864.21,
+        307.07
+      ],
+      "near_baseline_outer_left": [
+        310.03,
+        670.07
+      ],
+      "near_baseline_outer_right": [
+        970.32,
+        667.57
+      ],
+      "near_short_service_outer_left": [
+        354.3,
+        510.67
+      ],
+      "far_short_service_outer_right": [
+        892.68,
+        404.52
+      ]
+    },
+    "474": {
+      "far_baseline_outer_left": [
+        409.38,
+        308.68
+      ],
+      "far_baseline_outer_right": [
+        864.16,
+        306.91
+      ],
+      "near_baseline_outer_left": [
+        309.6,
+        670.23
+      ],
+      "near_baseline_outer_right": [
+        970.32,
+        667.57
+      ],
+      "near_short_service_outer_left": [
+        354.26,
+        510.76
+      ],
+      "far_short_service_outer_right": [
+        892.41,
+        404.09
+      ]
+    }
+  },
+  "max_stored_paint_discrepancy_px_by_frame": {
+    "0": 0.0,
+    "55": 0.0,
+    "228": 0.0,
+    "430": 0.0,
+    "474": 0.0
+  }
+}

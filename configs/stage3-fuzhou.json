@@ -1,0 +1,41 @@
+{
+  "video": "data/raw/tracknetv3/Professional/match4/video/2_02_05.mp4",
+  "source_sha256": "608aa78c323fac1441af223d381334e7778915e276c0da4644bcaa95aa3a6995",
+  "image_size": [1280, 720],
+  "fps": 25,
+  "calibration_frame": 0,
+  "segment": {"start_frame": 0, "end_frame_exclusive": 475},
+  "landmarks": [
+    {"id": "far_baseline_outer_left", "world_m": [6.7, 3.05, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [408, 309], "pixel": [408.68, 308.48]},
+    {"id": "far_baseline_inner_left", "world_m": [6.7, 2.59, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [444, 309], "pixel": [443.75, 308.34]},
+    {"id": "far_baseline_inner_right", "world_m": [6.7, -2.59, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [830, 308], "pixel": [829.81, 307.21]},
+    {"id": "far_baseline_outer_right", "world_m": [6.7, -3.05, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [865, 307], "pixel": [863.91, 306.98]},
+    {"id": "far_short_service_outer_left", "world_m": [1.98, 3.05, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [382, 406], "pixel": [382.79, 406.37]},
+    {"id": "far_short_service_inner_left", "world_m": [1.98, 2.59, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [421, 406], "pixel": [421.89, 406.22]},
+    {"id": "far_short_service_middle", "world_m": [1.98, 0, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [638, 405], "pixel": [637.31, 405.29]},
+    {"id": "far_short_service_inner_right", "world_m": [1.98, -2.59, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [853, 405], "pixel": [853.5, 404.74]},
+    {"id": "far_short_service_outer_right", "world_m": [1.98, -3.05, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [894, 405], "pixel": [892.68, 404.67]},
+    {"id": "near_short_service_outer_left", "world_m": [-1.98, 3.05, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [355, 510], "pixel": [354.31, 510.74]},
+    {"id": "near_short_service_inner_left", "world_m": [-1.98, 2.59, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [399, 510], "pixel": [397.82, 510.27]},
+    {"id": "near_short_service_middle", "world_m": [-1.98, 0, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [639, 509], "pixel": [638.37, 508.81]},
+    {"id": "near_short_service_outer_right", "world_m": [-1.98, -3.05, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [922, 509], "pixel": [922.85, 508.62]},
+    {"id": "near_long_service_inner_left", "world_m": [-5.94, 2.59, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [368, 640], "pixel": [367.23, 639.73]},
+    {"id": "near_long_service_middle", "world_m": [-5.94, 0, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [640, 638], "pixel": [639.82, 637.29]},
+    {"id": "near_long_service_inner_right", "world_m": [-5.94, -2.59, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [912, 638], "pixel": [911.93, 637.8]},
+    {"id": "near_baseline_outer_left", "world_m": [-6.7, 3.05, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [309, 670], "pixel": [308.71, 670.24]},
+    {"id": "near_baseline_middle", "world_m": [-6.7, 0, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [640, 667], "pixel": [640.52, 666.19]},
+    {"id": "near_baseline_inner_right", "world_m": [-6.7, -2.59, 0.0], "split": "holdout", "method": "local_paint_centrelines", "seed_px": [921, 667], "pixel": [920.19, 667.14]},
+    {"id": "near_baseline_outer_right", "world_m": [-6.7, -3.05, 0.0], "split": "train", "method": "local_paint_centrelines", "seed_px": [971, 668], "pixel": [970.28, 667.74]},
+    {"id": "net_post_top_left", "world_m": [0.0, 3.05, 1.55], "split": "train", "method": "visual_post_and_tape", "pixel": [368, 322.5]},
+    {"id": "net_bottom_left", "world_m": [0.0, 3.05, 0.79], "split": "holdout", "method": "visual_bottom_seam_and_post", "pixel": [368, 385.2]},
+    {"id": "net_post_top_right", "world_m": [0.0, -3.05, 1.55], "split": "train", "method": "visual_post_and_tape", "pixel": [907, 321.5]},
+    {"id": "net_bottom_right", "world_m": [0.0, -3.05, 0.79], "split": "holdout", "method": "visual_bottom_seam_and_post", "pixel": [907, 383.4]}
+  ],
+  "temporal_checks": [
+    {"frame": 55, "observations": [{"id": "far_baseline_outer_left", "pixel": [409.15, 308.46]}, {"id": "far_baseline_outer_right", "pixel": [864.48, 307.06]}, {"id": "near_baseline_outer_left", "pixel": [309.46, 670.1]}, {"id": "near_baseline_outer_right", "pixel": [968.69, 667.62]}, {"id": "near_short_service_outer_left", "pixel": [354.19, 510.52]}, {"id": "far_short_service_outer_right", "pixel": [892.58, 404.58]}]},
+    {"frame": 228, "observations": [{"id": "far_baseline_outer_left", "pixel": [408.6, 308.55]}, {"id": "far_baseline_outer_right", "pixel": [863.94, 307.06]}, {"id": "near_baseline_outer_left", "pixel": [309.1, 670.07]}, {"id": "near_baseline_outer_right", "pixel": [970.37, 667.69]}, {"id": "near_short_service_outer_left", "pixel": [354.29, 510.63]}, {"id": "far_short_service_outer_right", "pixel": [892.64, 404.64]}]},
+    {"frame": 430, "observations": [{"id": "far_baseline_outer_left", "pixel": [409.43, 308.51]}, {"id": "far_baseline_outer_right", "pixel": [864.21, 307.07]}, {"id": "near_baseline_outer_left", "pixel": [310.03, 670.07]}, {"id": "near_baseline_outer_right", "pixel": [970.32, 667.57]}, {"id": "near_short_service_outer_left", "pixel": [354.3, 510.67]}, {"id": "far_short_service_outer_right", "pixel": [892.68, 404.52]}]},
+    {"frame": 474, "observations": [{"id": "far_baseline_outer_left", "pixel": [409.38, 308.68]}, {"id": "far_baseline_outer_right", "pixel": [864.16, 306.91]}, {"id": "near_baseline_outer_left", "pixel": [309.6, 670.23]}, {"id": "near_baseline_outer_right", "pixel": [970.32, 667.57]}, {"id": "near_short_service_outer_left", "pixel": [354.26, 510.76]}, {"id": "far_short_service_outer_right", "pixel": [892.41, 404.09]}]}
+  ],
+  "measurement_notes": ["World origin is the floor centre under the net. Near baseline is negative x; image-left sideline is positive y. World points use nominal court dimensions in metres.", "Landmark identities and split were fixed before fitting a camera. Ground seeds were read on frame 0. Local grayscale paint ridges on both lines were fitted independently around each intersection. A stripe centre is a proxy for the nominal court reference; painted lines are 0.04 m wide.", "Both top net attachments were picked visually on magnified frame 0. Both reserved lower corners were picked where the dark lower seam meets each post. Their nominal elevation of 0.79 m assumes the regulation 0.76 m net depth and a taut edge; actual installation was not surveyed.", "Additional frames independently remeasure the same six intersections from their decoded pixels and the same fixed local search windows. Camera motion screening compares eight peripheral floor patches to frame 0 across all 476 frames."]
+}
