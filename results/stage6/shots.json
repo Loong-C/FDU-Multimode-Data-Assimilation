@@ -1,0 +1,386 @@
+{
+  "dataset": "Fuzhou China Open 2019 men's singles final, released rally clips",
+  "selection": "Retain six stage-one reviewed flights and add the third rally's lob, clear and smash to cover long and fast flights in testing. All selected flights end at another annotated stroke. Adjacent flights share the contact event, with no duplicated observation frame.",
+  "split_rule": "Entire first rally for development, entire second and third rallies for test. Within every flight, reserve source-frame offsets congruent to 2 modulo 4 for an independent image check. Apply before considering pixel values, missingness or reconstruction.",
+  "review": "Inspected decoded source frames around both strokes (at least plus/minus two frames), player stance and racket motion, and enlarged crops around every supplied centre in each selected flight. Labels on low-contrast or blurred objects may identify the motion trail. Original coordinates and missing rows are retained.",
+  "frame_convention": "Zero-based local MP4 frame, [start_frame,end_frame_exclusive), t_s measured from start_frame. The right boundary is the next stroke, not ground impact.",
+  "foot_proxy": "ShuttleSet player-location image annotations at each player's own stroke, intersected with the floor plane. Position is a weak contact proxy affected by reach, lunges and jumping; independent metre-scale contact/landing measurements are unavailable.",
+  "shots": [
+    {
+      "shot_id": "1_03_02_07",
+      "rally_id": "1_03_02",
+      "shot_index": 7,
+      "shot_type": "clear",
+      "shot_type_zh": "長球",
+      "split": "development",
+      "fps": 25,
+      "start_frame": 121,
+      "end_frame_exclusive": 146,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/1_03_02.mp4",
+      "start_shuttleset_frame": 14044,
+      "next_shuttleset_frame": 14070,
+      "player": "A",
+      "receiver": "B",
+      "player_uv_px": [
+        534.0,
+        638.0
+      ],
+      "player_xy_m": [
+        -5.8968,
+        1.0061
+      ],
+      "receiver_uv_px": [
+        493.0,
+        331.0
+      ],
+      "receiver_xy_m": [
+        5.4854,
+        1.8823
+      ],
+      "frame_counts": {
+        "missing": 2,
+        "holdout": 6,
+        "fit": 17
+      },
+      "contact_uncertainty_frames": [
+        2,
+        1
+      ],
+      "review": "Near player swings from the rear court. First two outgoing centres are missing. The high arc against dark stands is visible before the far player's overhead stroke."
+    },
+    {
+      "shot_id": "1_03_02_08",
+      "rally_id": "1_03_02",
+      "shot_index": 8,
+      "shot_type": "smash",
+      "shot_type_zh": "殺球",
+      "split": "development",
+      "fps": 25,
+      "start_frame": 146,
+      "end_frame_exclusive": 157,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/1_03_02.mp4",
+      "start_shuttleset_frame": 14070,
+      "next_shuttleset_frame": 14083,
+      "player": "B",
+      "receiver": "A",
+      "player_uv_px": [
+        493.0,
+        331.0
+      ],
+      "player_xy_m": [
+        5.4854,
+        1.8823
+      ],
+      "receiver_uv_px": [
+        578.0,
+        590.0
+      ],
+      "receiver_xy_m": [
+        -4.5505,
+        0.609
+      ],
+      "frame_counts": {
+        "fit": 8,
+        "holdout": 3
+      },
+      "contact_uncertainty_frames": [
+        1,
+        1
+      ],
+      "review": "Far overhead accelerates the shuttle across the net toward the near receiver. Several fast centres are elongated white streaks."
+    },
+    {
+      "shot_id": "2_02_05_01",
+      "rally_id": "2_02_05",
+      "shot_index": 1,
+      "shot_type": "short_service",
+      "shot_type_zh": "發短球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 23,
+      "end_frame_exclusive": 39,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/2_02_05.mp4",
+      "start_shuttleset_frame": 51285,
+      "next_shuttleset_frame": 51298,
+      "player": "A",
+      "receiver": "B",
+      "player_uv_px": [
+        625.0,
+        383.0
+      ],
+      "player_xy_m": [
+        2.9729,
+        0.1526
+      ],
+      "receiver_uv_px": [
+        711.0,
+        526.0
+      ],
+      "receiver_xy_m": [
+        -2.5666,
+        -0.7656
+      ],
+      "frame_counts": {
+        "fit": 12,
+        "holdout": 4
+      },
+      "contact_uncertainty_frames": [
+        1,
+        1
+      ],
+      "review": "Far player serves short. First centre is close to racket and body, then crosses the net tape toward the near player. Several labels overlap player clothing or court paint."
+    },
+    {
+      "shot_id": "2_02_05_04",
+      "rally_id": "2_02_05",
+      "shot_index": 4,
+      "shot_type": "lob",
+      "shot_type_zh": "挑球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 79,
+      "end_frame_exclusive": 119,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/2_02_05.mp4",
+      "start_shuttleset_frame": 51341,
+      "next_shuttleset_frame": 51381,
+      "player": "B",
+      "receiver": "A",
+      "player_uv_px": [
+        765.0,
+        507.0
+      ],
+      "player_xy_m": [
+        -1.9305,
+        -1.3634
+      ],
+      "receiver_uv_px": [
+        535.0,
+        324.0
+      ],
+      "receiver_xy_m": [
+        5.8387,
+        1.3465
+      ],
+      "frame_counts": {
+        "fit": 15,
+        "missing": 19,
+        "holdout": 6
+      },
+      "contact_uncertainty_frames": [
+        1,
+        1
+      ],
+      "review": "Near player lifts. Frame 80 lacks a label and the rising trajectory reappears at 81. There is a sustained gap over the high middle arc, followed by descent to the far hitter."
+    },
+    {
+      "shot_id": "3_18_17_11",
+      "rally_id": "3_18_17",
+      "shot_index": 11,
+      "shot_type": "net_shot",
+      "shot_type_zh": "放小球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 220,
+      "end_frame_exclusive": 244,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+      "start_shuttleset_frame": 131451,
+      "next_shuttleset_frame": 131473,
+      "player": "B",
+      "receiver": "A",
+      "player_uv_px": [
+        557.0,
+        538.0
+      ],
+      "player_xy_m": [
+        -2.9441,
+        0.8552
+      ],
+      "receiver_uv_px": [
+        550.0,
+        416.0
+      ],
+      "receiver_xy_m": [
+        1.5517,
+        1.041
+      ],
+      "frame_counts": {
+        "fit": 17,
+        "holdout": 6,
+        "missing": 1
+      },
+      "contact_uncertainty_frames": [
+        1,
+        1
+      ],
+      "review": "Near player reaches left, short flight skims the net, far player lunges for the reply. Many supplied centres lie over a white sponsor logo and net tape; frame 227 lacks a centre."
+    },
+    {
+      "shot_id": "3_18_17_13",
+      "rally_id": "3_18_17",
+      "shot_index": 13,
+      "shot_type": "lob",
+      "shot_type_zh": "挑球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 265,
+      "end_frame_exclusive": 302,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+      "start_shuttleset_frame": 131496,
+      "next_shuttleset_frame": 131532,
+      "player": "B",
+      "receiver": "A",
+      "player_uv_px": [
+        553.0,
+        516.0
+      ],
+      "player_xy_m": [
+        -2.2144,
+        0.9145
+      ],
+      "receiver_uv_px": [
+        694.0,
+        324.0
+      ],
+      "receiver_xy_m": [
+        5.8166,
+        -0.7532
+      ],
+      "frame_counts": {
+        "fit": 17,
+        "missing": 15,
+        "holdout": 5
+      },
+      "contact_uncertainty_frames": [
+        2,
+        1
+      ],
+      "review": "Near player takes the shuttle low. Incoming centre descends through 265, frames 266-268 have no label, then it reappears rising. Labels disappear near the high arc; far player jumps and plays an overhead return."
+    },
+    {
+      "shot_id": "3_18_17_14",
+      "rally_id": "3_18_17",
+      "shot_index": 14,
+      "shot_type": "drop",
+      "shot_type_zh": "切球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 302,
+      "end_frame_exclusive": 325,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+      "start_shuttleset_frame": 131532,
+      "next_shuttleset_frame": 131555,
+      "player": "A",
+      "receiver": "B",
+      "player_uv_px": [
+        694.0,
+        324.0
+      ],
+      "player_xy_m": [
+        5.8166,
+        -0.7532
+      ],
+      "receiver_uv_px": [
+        520.0,
+        552.0
+      ],
+      "receiver_xy_m": [
+        -3.3879,
+        1.226
+      ],
+      "frame_counts": {
+        "fit": 16,
+        "holdout": 6,
+        "missing": 1
+      },
+      "contact_uncertainty_frames": [
+        1,
+        1
+      ],
+      "review": "Far player jumps for a sliced overhead. Horizontal direction changes at 302-303, followed by a shallow return toward the near player's left lunge. Frame 323 lacks a centre."
+    },
+    {
+      "shot_id": "3_18_17_17",
+      "rally_id": "3_18_17",
+      "shot_index": 17,
+      "shot_type": "clear",
+      "shot_type_zh": "長球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 386,
+      "end_frame_exclusive": 414,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+      "start_shuttleset_frame": 131617,
+      "next_shuttleset_frame": 131645,
+      "player": "B",
+      "receiver": "A",
+      "player_uv_px": [
+        729.0,
+        635.0
+      ],
+      "player_xy_m": [
+        -5.8337,
+        -0.8494
+      ],
+      "receiver_uv_px": [
+        753.0,
+        326.0
+      ],
+      "receiver_xy_m": [
+        5.7027,
+        -1.5279
+      ],
+      "frame_counts": {
+        "missing": 3,
+        "fit": 19,
+        "holdout": 6
+      },
+      "contact_uncertainty_frames": [
+        2,
+        1
+      ],
+      "review": "Near rear-court player swings and follows through around 386. First three outgoing centres are missing. The high flight descends against the dark stands toward the far jumper."
+    },
+    {
+      "shot_id": "3_18_17_18",
+      "rally_id": "3_18_17",
+      "shot_index": 18,
+      "shot_type": "smash",
+      "shot_type_zh": "殺球",
+      "split": "test",
+      "fps": 25,
+      "start_frame": 414,
+      "end_frame_exclusive": 428,
+      "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+      "start_shuttleset_frame": 131645,
+      "next_shuttleset_frame": 131659,
+      "player": "A",
+      "receiver": "B",
+      "player_uv_px": [
+        753.0,
+        326.0
+      ],
+      "player_xy_m": [
+        5.7027,
+        -1.5279
+      ],
+      "receiver_uv_px": [
+        683.0,
+        576.0
+      ],
+      "receiver_xy_m": [
+        -4.1459,
+        -0.4396
+      ],
+      "frame_counts": {
+        "fit": 10,
+        "holdout": 3,
+        "missing": 1
+      },
+      "contact_uncertainty_frames": [
+        1,
+        2
+      ],
+      "review": "Far overhead around 414 sharply accelerates the shuttle downward between 414 and 416. Near player stretches right to defend. The last labelled outgoing centre is 426; labels are missing during the return stroke."
+    }
+  ]
+}

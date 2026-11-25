@@ -1,0 +1,23 @@
+{
+  "dataset": "Fuzhou China Open 2019 men's singles final, released rally clips",
+  "selection": "Retain six stage-one reviewed flights and add the third rally's lob, clear and smash to cover long and fast flights in testing. All selected flights end at another annotated stroke. Adjacent flights share the contact event, with no duplicated observation frame.",
+  "split_rule": "Entire first rally for development, entire second and third rallies for test. Within every flight, reserve source-frame offsets congruent to 2 modulo 4 for an independent image check. Apply before considering pixel values, missingness or reconstruction.",
+  "review": "Inspected decoded source frames around both strokes (at least plus/minus two frames), player stance and racket motion, and enlarged crops around every supplied centre in each selected flight. Labels on low-contrast or blurred objects may identify the motion trail. Original coordinates and missing rows are retained.",
+  "rallies": {
+    "1_03_02": {"split": "development", "shots": {
+      "7": {"contact_uncertainty_frames": [2, 1], "review": "Near player swings from the rear court. First two outgoing centres are missing. The high arc against dark stands is visible before the far player's overhead stroke."},
+      "8": {"contact_uncertainty_frames": [1, 1], "review": "Far overhead accelerates the shuttle across the net toward the near receiver. Several fast centres are elongated white streaks."}
+    }},
+    "2_02_05": {"split": "test", "shots": {
+      "1": {"contact_uncertainty_frames": [1, 1], "review": "Far player serves short. First centre is close to racket and body, then crosses the net tape toward the near player. Several labels overlap player clothing or court paint."},
+      "4": {"contact_uncertainty_frames": [1, 1], "review": "Near player lifts. Frame 80 lacks a label and the rising trajectory reappears at 81. There is a sustained gap over the high middle arc, followed by descent to the far hitter."}
+    }},
+    "3_18_17": {"split": "test", "shots": {
+      "11": {"contact_uncertainty_frames": [1, 1], "review": "Near player reaches left, short flight skims the net, far player lunges for the reply. Many supplied centres lie over a white sponsor logo and net tape; frame 227 lacks a centre."},
+      "13": {"contact_uncertainty_frames": [2, 1], "review": "Near player takes the shuttle low. Incoming centre descends through 265, frames 266-268 have no label, then it reappears rising. Labels disappear near the high arc; far player jumps and plays an overhead return."},
+      "14": {"contact_uncertainty_frames": [1, 1], "review": "Far player jumps for a sliced overhead. Horizontal direction changes at 302-303, followed by a shallow return toward the near player's left lunge. Frame 323 lacks a centre."},
+      "17": {"contact_uncertainty_frames": [2, 1], "review": "Near rear-court player swings and follows through around 386. First three outgoing centres are missing. The high flight descends against the dark stands toward the far jumper."},
+      "18": {"contact_uncertainty_frames": [1, 2], "review": "Far overhead around 414 sharply accelerates the shuttle downward between 414 and 416. Near player stretches right to defend. The last labelled outgoing centre is 426; labels are missing during the return stroke."}
+    }}
+  }
+}

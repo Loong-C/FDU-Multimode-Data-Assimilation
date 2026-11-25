@@ -9,3 +9,6 @@ artifacts/stage2/
 artifacts/stage3/
 artifacts/stage4/
 artifacts/stage5/
+artifacts/stage6/
+results/stage6/observations.csv
+results/stage6/residuals.csv

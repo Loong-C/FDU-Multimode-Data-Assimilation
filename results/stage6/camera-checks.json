@@ -1,0 +1,1200 @@
+{
+  "1_03_02": {
+    "source_video": "data/raw/tracknetv3/Professional/match4/video/1_03_02.mp4",
+    "decoded_frames": 358,
+    "stable_frame_range_half_open": [
+      0,
+      358
+    ],
+    "median_reference_frames": [
+      0,
+      25,
+      51,
+      76,
+      102,
+      127,
+      153,
+      178,
+      204,
+      229,
+      255,
+      280,
+      306,
+      331,
+      357
+    ],
+    "method": "Independent pinhole fit per rally. Floor paint intersections were remeasured on a median image and net attachments checked against the manually picked stage-three frame. A 27x27 pixel patch localizes the post or seam. The lower net edge uses nominal elevation 0.79 m.",
+    "landmarks": [
+      {
+        "id": "far_baseline_outer_left",
+        "world_m": [
+          6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          408.84,
+          308.48
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_left",
+        "world_m": [
+          6.7,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          444.35,
+          308.35
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_right",
+        "world_m": [
+          6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          829.78,
+          307.16
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_outer_right",
+        "world_m": [
+          6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          864.4,
+          307.03
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_left",
+        "world_m": [
+          1.98,
+          3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          382.71,
+          406.43
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_left",
+        "world_m": [
+          1.98,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          421.88,
+          406.22
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_middle",
+        "world_m": [
+          1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          637.76,
+          405.32
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_right",
+        "world_m": [
+          1.98,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          853.62,
+          404.71
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_right",
+        "world_m": [
+          1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          892.67,
+          404.59
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_left",
+        "world_m": [
+          -1.98,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          354.25,
+          510.54
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_inner_left",
+        "world_m": [
+          -1.98,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          397.95,
+          510.26
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_middle",
+        "world_m": [
+          -1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          637.36,
+          508.8
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_right",
+        "world_m": [
+          -1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          923.05,
+          508.66
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_left",
+        "world_m": [
+          -5.94,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          367.3,
+          639.67
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_middle",
+        "world_m": [
+          -5.94,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.32,
+          637.35
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_right",
+        "world_m": [
+          -5.94,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          911.93,
+          637.81
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_left",
+        "world_m": [
+          -6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          310.62,
+          670.06
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_middle",
+        "world_m": [
+          -6.7,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.52,
+          666.19
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_inner_right",
+        "world_m": [
+          -6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          918.71,
+          667.13
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_right",
+        "world_m": [
+          -6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          970.05,
+          667.66
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "net_post_top_left",
+        "world_m": [
+          0.0,
+          3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          368.01,
+          322.54
+        ],
+        "patch_correlation": 0.9867,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_left",
+        "world_m": [
+          0.0,
+          3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          368.0,
+          385.18
+        ],
+        "patch_correlation": 0.9912,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_post_top_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          906.97,
+          321.54
+        ],
+        "patch_correlation": 0.9783,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          906.99,
+          383.39
+        ],
+        "patch_correlation": 0.9935,
+        "method": "registered_visually_checked_net_patch"
+      }
+    ],
+    "train": {
+      "n": 13,
+      "rmse_px": 1.1612,
+      "max_px": 2.1409
+    },
+    "holdout": {
+      "n": 11,
+      "rmse_px": 1.7939,
+      "max_px": 3.3774
+    },
+    "original_stage3_camera_on_holdout": {
+      "n": 11,
+      "rmse_px": 1.8515,
+      "max_px": 3.2765
+    },
+    "motion_anchor_ids": [
+      "far_baseline_outer_left",
+      "far_baseline_outer_right",
+      "near_baseline_outer_left",
+      "near_baseline_outer_right",
+      "near_short_service_outer_left",
+      "near_short_service_outer_right",
+      "far_short_service_outer_left",
+      "far_short_service_outer_right"
+    ],
+    "min_matched_anchors": 8,
+    "max_median_anchor_displacement_px": 0.025,
+    "max_centre_translation_px": 0.0129,
+    "max_abs_scale_change": 4.81e-05,
+    "outside_stable_interval": {}
+  },
+  "2_02_05": {
+    "source_video": "data/raw/tracknetv3/Professional/match4/video/2_02_05.mp4",
+    "decoded_frames": 476,
+    "stable_frame_range_half_open": [
+      0,
+      475
+    ],
+    "median_reference_frames": [
+      0,
+      33,
+      67,
+      101,
+      135,
+      169,
+      203,
+      236,
+      270,
+      304,
+      338,
+      372,
+      406,
+      440,
+      474
+    ],
+    "method": "Independent pinhole fit per rally. Floor paint intersections were remeasured on a median image and net attachments checked against the manually picked stage-three frame. A 27x27 pixel patch localizes the post or seam. The lower net edge uses nominal elevation 0.79 m.",
+    "landmarks": [
+      {
+        "id": "far_baseline_outer_left",
+        "world_m": [
+          6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          409.22,
+          308.49
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_left",
+        "world_m": [
+          6.7,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          443.94,
+          308.34
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_right",
+        "world_m": [
+          6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          829.64,
+          307.17
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_outer_right",
+        "world_m": [
+          6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          863.98,
+          307.05
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_left",
+        "world_m": [
+          1.98,
+          3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          382.79,
+          406.42
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_left",
+        "world_m": [
+          1.98,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          422.04,
+          406.23
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_middle",
+        "world_m": [
+          1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          637.65,
+          405.31
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_right",
+        "world_m": [
+          1.98,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          853.63,
+          404.7
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_right",
+        "world_m": [
+          1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          892.57,
+          404.6
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_left",
+        "world_m": [
+          -1.98,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          354.23,
+          510.6
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_inner_left",
+        "world_m": [
+          -1.98,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          397.93,
+          510.26
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_middle",
+        "world_m": [
+          -1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          638.72,
+          508.82
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_right",
+        "world_m": [
+          -1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          922.95,
+          508.69
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_left",
+        "world_m": [
+          -5.94,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          367.4,
+          639.67
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_middle",
+        "world_m": [
+          -5.94,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.13,
+          637.32
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_right",
+        "world_m": [
+          -5.94,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          911.66,
+          637.8
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_left",
+        "world_m": [
+          -6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          310.04,
+          670.1
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_middle",
+        "world_m": [
+          -6.7,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.6,
+          666.21
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_inner_right",
+        "world_m": [
+          -6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          919.69,
+          667.13
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_right",
+        "world_m": [
+          -6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          969.05,
+          667.66
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "net_post_top_left",
+        "world_m": [
+          0.0,
+          3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          368.01,
+          322.55
+        ],
+        "patch_correlation": 0.9875,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_left",
+        "world_m": [
+          0.0,
+          3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          368.01,
+          385.18
+        ],
+        "patch_correlation": 0.993,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_post_top_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          906.98,
+          321.53
+        ],
+        "patch_correlation": 0.982,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          906.99,
+          383.36
+        ],
+        "patch_correlation": 0.9947,
+        "method": "registered_visually_checked_net_patch"
+      }
+    ],
+    "train": {
+      "n": 13,
+      "rmse_px": 1.0312,
+      "max_px": 2.0359
+    },
+    "holdout": {
+      "n": 11,
+      "rmse_px": 1.8283,
+      "max_px": 3.3901
+    },
+    "original_stage3_camera_on_holdout": {
+      "n": 11,
+      "rmse_px": 1.816,
+      "max_px": 3.2775
+    },
+    "motion_anchor_ids": [
+      "far_baseline_outer_left",
+      "far_baseline_outer_right",
+      "near_baseline_outer_left",
+      "near_baseline_outer_right",
+      "near_short_service_outer_left",
+      "near_short_service_outer_right",
+      "far_short_service_outer_left",
+      "far_short_service_outer_right"
+    ],
+    "min_matched_anchors": 8,
+    "max_median_anchor_displacement_px": 0.0328,
+    "max_centre_translation_px": 0.016,
+    "max_abs_scale_change": 4.65e-05,
+    "outside_stable_interval": {
+      "475": {
+        "matched": 0
+      }
+    }
+  },
+  "3_18_17": {
+    "source_video": "data/raw/tracknetv3/Professional/match4/video/3_18_17.mp4",
+    "decoded_frames": 556,
+    "stable_frame_range_half_open": [
+      0,
+      556
+    ],
+    "median_reference_frames": [
+      0,
+      39,
+      79,
+      118,
+      158,
+      198,
+      237,
+      277,
+      317,
+      356,
+      396,
+      436,
+      475,
+      515,
+      555
+    ],
+    "method": "Independent pinhole fit per rally. Floor paint intersections were remeasured on a median image and net attachments checked against the manually picked stage-three frame. A 27x27 pixel patch localizes the post or seam. The lower net edge uses nominal elevation 0.79 m.",
+    "landmarks": [
+      {
+        "id": "far_baseline_outer_left",
+        "world_m": [
+          6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          409.09,
+          308.55
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_left",
+        "world_m": [
+          6.7,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          444.36,
+          308.36
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_inner_right",
+        "world_m": [
+          6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          829.93,
+          307.16
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_baseline_outer_right",
+        "world_m": [
+          6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          864.52,
+          307.05
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_left",
+        "world_m": [
+          1.98,
+          3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          382.72,
+          406.47
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_left",
+        "world_m": [
+          1.98,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          421.99,
+          406.24
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_middle",
+        "world_m": [
+          1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          637.9,
+          405.3
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_inner_right",
+        "world_m": [
+          1.98,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          853.6,
+          404.71
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "far_short_service_outer_right",
+        "world_m": [
+          1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          892.61,
+          404.56
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_left",
+        "world_m": [
+          -1.98,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          354.43,
+          510.55
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_inner_left",
+        "world_m": [
+          -1.98,
+          2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          398.0,
+          510.26
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_middle",
+        "world_m": [
+          -1.98,
+          0,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          638.69,
+          508.82
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_short_service_outer_right",
+        "world_m": [
+          -1.98,
+          -3.05,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          922.99,
+          508.71
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_left",
+        "world_m": [
+          -5.94,
+          2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          367.37,
+          639.67
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_middle",
+        "world_m": [
+          -5.94,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.09,
+          637.33
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_long_service_inner_right",
+        "world_m": [
+          -5.94,
+          -2.59,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          911.92,
+          637.83
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_left",
+        "world_m": [
+          -6.7,
+          3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          309.74,
+          670.09
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_middle",
+        "world_m": [
+          -6.7,
+          0,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          640.58,
+          666.19
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_inner_right",
+        "world_m": [
+          -6.7,
+          -2.59,
+          0.0
+        ],
+        "split": "holdout",
+        "pixel": [
+          918.86,
+          667.14
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "near_baseline_outer_right",
+        "world_m": [
+          -6.7,
+          -3.05,
+          0.0
+        ],
+        "split": "train",
+        "pixel": [
+          970.92,
+          667.69
+        ],
+        "method": "local_paint_centrelines"
+      },
+      {
+        "id": "net_post_top_left",
+        "world_m": [
+          0.0,
+          3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          368.0,
+          322.55
+        ],
+        "patch_correlation": 0.9852,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_left",
+        "world_m": [
+          0.0,
+          3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          368.01,
+          385.2
+        ],
+        "patch_correlation": 0.992,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_post_top_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          1.55
+        ],
+        "split": "train",
+        "pixel": [
+          906.97,
+          321.53
+        ],
+        "patch_correlation": 0.9786,
+        "method": "registered_visually_checked_net_patch"
+      },
+      {
+        "id": "net_bottom_right",
+        "world_m": [
+          0.0,
+          -3.05,
+          0.79
+        ],
+        "split": "holdout",
+        "pixel": [
+          906.99,
+          383.34
+        ],
+        "patch_correlation": 0.9937,
+        "method": "registered_visually_checked_net_patch"
+      }
+    ],
+    "train": {
+      "n": 13,
+      "rmse_px": 1.1905,
+      "max_px": 2.2829
+    },
+    "holdout": {
+      "n": 11,
+      "rmse_px": 1.801,
+      "max_px": 3.3738
+    },
+    "original_stage3_camera_on_holdout": {
+      "n": 11,
+      "rmse_px": 1.854,
+      "max_px": 3.2846
+    },
+    "motion_anchor_ids": [
+      "far_baseline_outer_left",
+      "far_baseline_outer_right",
+      "near_baseline_outer_left",
+      "near_baseline_outer_right",
+      "near_short_service_outer_left",
+      "near_short_service_outer_right",
+      "far_short_service_outer_left",
+      "far_short_service_outer_right"
+    ],
+    "min_matched_anchors": 8,
+    "max_median_anchor_displacement_px": 0.034,
+    "max_centre_translation_px": 0.0137,
+    "max_abs_scale_change": 3.86e-05,
+    "outside_stable_interval": {}
+  }
+}
