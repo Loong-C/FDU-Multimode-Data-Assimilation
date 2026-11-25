@@ -1,0 +1,169 @@
+{
+  "case_name": "clear_oblique_short_401",
+  "paired_full_case": "clear_oblique_noise_401",
+  "best_theta": [
+    -4.695132331928716,
+    -0.9888123816811951,
+    2.2229947576525446,
+    33.50690355668199,
+    6.678115427698966,
+    27.6078401246005
+  ],
+  "best_short_rmse_px": 0.8255255814990088,
+  "selected": {
+    "height_m": 3.0,
+    "theta": [
+      -5.946565446172509,
+      -2.470260369030174,
+      3.0,
+      31.309760433836978,
+      8.694075373494613,
+      22.276413275471587
+    ],
+    "short_rmse_px": 0.7953420353913788,
+    "prediction_gap_px": 0.054778263863518695,
+    "landing_gap_m": 1.5661391846464836,
+    "launch_gap_m": 2.0891410017712277,
+    "opposite_singles_and_clears_net": true,
+    "eligible": true
+  },
+  "full_refit_at_selected_height_rmse_px": 6.017268677855206,
+  "profiles": [
+    {
+      "height_m": 0.5,
+      "theta": [
+        -1.920468783097311,
+        2.295924801023734,
+        0.5,
+        35.34963911669377,
+        -1.5563924966924512,
+        41.57172163506284
+      ],
+      "short_rmse_px": 0.9016307940186011,
+      "prediction_gap_px": 0.10398511019461251,
+      "landing_gap_m": 2.3447675350139563,
+      "launch_gap_m": 4.632166566905399,
+      "opposite_singles_and_clears_net": false,
+      "eligible": false
+    },
+    {
+      "height_m": 1.0,
+      "theta": [
+        -2.725575508132595,
+        1.3427929347667709,
+        1.0,
+        35.33570587145198,
+        1.4818944920533133,
+        37.14879882026232
+      ],
+      "short_rmse_px": 0.8779604924837233,
+      "prediction_gap_px": 0.07469633047379842,
+      "landing_gap_m": 1.854701689374657,
+      "launch_gap_m": 3.2880470816422154,
+      "opposite_singles_and_clears_net": false,
+      "eligible": false
+    },
+    {
+      "height_m": 1.5,
+      "theta": [
+        -3.5307588763146347,
+        0.38959040322666233,
+        1.5,
+        34.85949582298498,
+        3.943839976091565,
+        33.05580672301003
+      ],
+      "short_rmse_px": 0.8557615506887823,
+      "prediction_gap_px": 0.04514471975081811,
+      "landing_gap_m": 1.1969835312982393,
+      "launch_gap_m": 1.9438315773681307,
+      "opposite_singles_and_clears_net": false,
+      "eligible": false
+    },
+    {
+      "height_m": 2.0,
+      "theta": [
+        -4.335993542515757,
+        -0.563660485370606,
+        2.0,
+        34.00006068199875,
+        5.9291349950749614,
+        29.234527174277456
+      ],
+      "short_rmse_px": 0.8346414400305762,
+      "prediction_gap_px": 0.014366109694630723,
+      "landing_gap_m": 0.39755959736046026,
+      "launch_gap_m": 0.5995510544882834,
+      "opposite_singles_and_clears_net": true,
+      "eligible": true
+    },
+    {
+      "height_m": 2.5,
+      "theta": [
+        -5.14126530759233,
+        -1.5169468290415313,
+        2.5,
+        32.80664961741038,
+        7.499749941664598,
+        25.64886518918502
+      ],
+      "short_rmse_px": 0.8144639907533922,
+      "prediction_gap_px": 0.018579194048802157,
+      "landing_gap_m": 0.5268191406018776,
+      "launch_gap_m": 0.7447768328506542,
+      "opposite_singles_and_clears_net": true,
+      "eligible": true
+    },
+    {
+      "height_m": 3.0,
+      "theta": [
+        -5.946565446172509,
+        -2.470260369030174,
+        3.0,
+        31.309760433836978,
+        8.694075373494613,
+        22.276413275471587
+      ],
+      "short_rmse_px": 0.7953420353913788,
+      "prediction_gap_px": 0.054778263863518695,
+      "landing_gap_m": 1.5661391846464836,
+      "launch_gap_m": 2.0891410017712277,
+      "opposite_singles_and_clears_net": true,
+      "eligible": true
+    },
+    {
+      "height_m": 3.5,
+      "theta": [
+        -6.751888280860784,
+        -3.423595482320758,
+        3.5,
+        29.52678952730137,
+        9.534128878475745,
+        19.104172512124816
+      ],
+      "short_rmse_px": 0.7777229985661656,
+      "prediction_gap_px": 0.0956486029914435,
+      "landing_gap_m": 2.715930709944973,
+      "launch_gap_m": 3.4335340641400864,
+      "opposite_singles_and_clears_net": false,
+      "eligible": false
+    },
+    {
+      "height_m": 4.0,
+      "theta": [
+        -7.557229644266432,
+        -4.376947861641746,
+        4.0,
+        27.464844485797407,
+        10.029172417427095,
+        16.126374155174418
+      ],
+      "short_rmse_px": 0.7626082643574671,
+      "prediction_gap_px": 0.14320922485554335,
+      "landing_gap_m": 3.977067372689362,
+      "launch_gap_m": 4.777950469310939,
+      "opposite_singles_and_clears_net": false,
+      "eligible": false
+    }
+  ]
+}

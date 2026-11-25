@@ -1,0 +1,48 @@
+{
+  "exports": {
+    "cases": 50,
+    "starts": 150,
+    "observations": 1816,
+    "score_absolute_tolerance": 0.0001,
+    "max_score_discrepancy": {
+      "position_rmse_m": 1.0970370201368596e-05,
+      "landing_xy_error_m": 6.339178442588134e-08,
+      "landing_time_error_s": 9.379350851546064e-09,
+      "apex_height_error_m": 5.5884908256587096e-08,
+      "launch_position_error_m": 0.0,
+      "launch_velocity_error_m_s": 0.0,
+      "scored_duration_s": 9.845463888602524e-09,
+      "observed_rmse_px": 9.175404883841542e-09,
+      "clean_image_rmse_px": 8.448859249389069e-06
+    },
+    "clean_max_launch_error_m": 8.935333725879724e-07,
+    "clean_max_velocity_error_m_s": 1.0451603644188372e-05
+  },
+  "pairings": {
+    "paired_seeds": 3,
+    "baseline_frames": 55,
+    "retained_dropout_or_occlusion": 40,
+    "identical_detections_with_swapped_loss": 55,
+    "false_detections_per_seed": 6
+  },
+  "ambiguity": {
+    "short_observations": 4,
+    "short_rmse_px": [
+      0.825525582798838,
+      0.7953420363598926
+    ],
+    "prediction_gap_px": 0.054778264148946626,
+    "landing_gap_m": 1.5661391859845901,
+    "full_fixed_height_refit_rmse_px": 6.017268653459092
+  },
+  "interfaces": {
+    "fuzhou_in_sensor_frames": 25,
+    "fuzhou_total_frames": 55,
+    "stage3_delayed_first_detection_s": 0.12,
+    "stage3_retained_observations": 41,
+    "invalid_inputs_rejected": 5,
+    "launch_error_m": 6.168065192611881e-06,
+    "launch_velocity_error_m_s": 2.296756098412777e-05
+  },
+  "passed": true
+}
