@@ -1,0 +1,95 @@
+{
+  "data": "synthetic, independently calibrated simulated cameras",
+  "seed": 601,
+  "passed": true,
+  "native_fps_a": 25.0,
+  "native_fps_b": 59.94005994005994,
+  "true_b_to_a_scale": 1.0013,
+  "true_b_to_a_offset_s": 1.532,
+  "calibration_heldout_rmse_px": {
+    "a": 0.3522110992838382,
+    "b": 0.30361702710655364
+  },
+  "noisy_evaluation": {
+    "clock": {
+      "method": "independent_sync_events",
+      "scale_b_to_a": 1.0012960861056752,
+      "offset_a_s": 1.5321116112198325,
+      "fit_anchor_range_b_s": [
+        1.0,
+        45.0
+      ],
+      "fit_anchors": 3,
+      "fit_rmse_s": 0.0004045619397855985,
+      "check_anchors": 2,
+      "check_rmse_s": 0.0007770279970450589
+    },
+    "launch_a_s": 8.292,
+    "stop_a_s": 9.772,
+    "model": "fixed_drag_baseline",
+    "a_fit_k_m_inv": 0.217,
+    "player_xy_m": null,
+    "receiver_xy_m": null,
+    "a_training_points": 31,
+    "a_fit_theta": [
+      -5.284427002845332,
+      -1.6828184354500544,
+      2.5938143866965135,
+      33.077097884165994,
+      8.021354081255476,
+      25.03856097260622
+    ],
+    "predicted_landing_s": 2.180910579427644,
+    "a_fit_rmse_px": 1.1330238118820737,
+    "b_held_out_points": 82,
+    "b_sync_extrapolated": 0,
+    "prediction_counts": {
+      "projected": 82
+    },
+    "b_rmse_px": 2.504868572844966,
+    "camera_baseline_m": 32.76514841393738,
+    "reference_counts": {
+      "triangulated": 64,
+      "long_a_gap": 16,
+      "no_bracket": 2
+    },
+    "accepted_angle_range_deg": [
+      33.879438282349845,
+      64.11357587175564
+    ],
+    "a_fit_to_stereo_compared": 64,
+    "a_fit_to_stereo_rmse_m": 0.045460603667555374,
+    "reference_pixel_rms_m": 0.031605887988039094,
+    "reference_clock_rms_m": 0.02197686738876355,
+    "reference_combined_rms_m": 0.03849564723102825,
+    "reference_uncertainty_count": 64,
+    "sigma_a_px": 0.8,
+    "sigma_b_px": 1.2,
+    "sync_sigma_s": 0.003,
+    "max_gap_a_s": 0.06,
+    "min_angle_deg": 2.0,
+    "max_pair_reprojection_px": 6.0
+  },
+  "stereo_to_known_truth_rmse_m": 0.028298005663317798,
+  "exact_input_b_rmse_px": 3.8024783450818447e-06,
+  "b_score_with_18px_label_shift_px": 19.779442486924225,
+  "b_score_with_40ms_clock_error_px": 23.434534123553476,
+  "independent_a_estimate_unchanged": true,
+  "map_validation": {
+    "joint_drag_b_rmse_px": 6.155455310722847,
+    "fixed_drag_map_b_rmse_px": 2.4001837014342673,
+    "a_joint_drag_m_inv": 0.2101075698300029,
+    "independent_a_state_and_drag": true,
+    "joint_b_rmse_with_18px_shift": 21.853192927303578
+  },
+  "uncertainty_check": {
+    "draws": 400,
+    "empirical_rms_m": 0.04151939635120365,
+    "pixel_rms_m": 0.0383357431227914,
+    "sync_rms_m": 0.01678783808695681,
+    "reference_rms_m": 0.041850456489870284,
+    "sd_x_m": 0.02380187496349137,
+    "sd_y_m": 0.030883569621143126,
+    "sd_z_m": 0.015203176776215348
+  }
+}

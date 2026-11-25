@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "evidence": "Independent recomputation on original paired labels and decoded videos. Only the frozen A launch and drag come from the estimator. Integration uses DOP853. Native OpenCV projections are reconstructed from ks, distortion, newcameramtx and projection_mat. Stereo references are independently recomputed using ray normal equations and OpenCV homogeneous DLT.",
+  "clock": "Decoded frame timestamps confirm the published common 120 Hz index. Physical shutter synchronization uncertainty is not observable from these nominal timestamps.",
+  "paired_source_frames": 270,
+  "scored_right": 270,
+  "native_b_pooled_rmse_px": 16.701023938070815,
+  "compared_to_stereo": 270,
+  "pooled_fit_to_midpoint_rmse_m": 0.1926451509848236,
+  "trials": [
+    {
+      "trial": "001",
+      "source_frame_ids": [
+        0,
+        97
+      ],
+      "paired_source_frames": 98,
+      "decoded_frames_left": 98,
+      "decoded_frames_right": 98,
+      "right_visible": 98,
+      "scored_right": 98,
+      "right_unscored": 0,
+      "right_native_rmse_px": 18.86037139124812,
+      "max_native_prediction_difference_px": 2.6237379781460916e-07,
+      "max_csv_to_decoded_pts_error_s": 1.1102230246251565e-16,
+      "stereo_accepted": 98,
+      "stereo_excluded": 0,
+      "native_both_gate_decisions_different": 0,
+      "compared_to_reference": 98,
+      "fit_to_midpoint_rmse_m": 0.2109827936597739,
+      "dlt_vs_midpoint_rmse_m": 0.0037479557260997067,
+      "dlt_vs_midpoint_max_m": 0.01839784056413703,
+      "fit_to_dlt_rmse_m": 0.20941840422515573
+    },
+    {
+      "trial": "002",
+      "source_frame_ids": [
+        0,
+        87
+      ],
+      "paired_source_frames": 88,
+      "decoded_frames_left": 88,
+      "decoded_frames_right": 88,
+      "right_visible": 88,
+      "scored_right": 88,
+      "right_unscored": 0,
+      "right_native_rmse_px": 13.161740011834477,
+      "max_native_prediction_difference_px": 2.252128592271511e-07,
+      "max_csv_to_decoded_pts_error_s": 1.1102230246251565e-16,
+      "stereo_accepted": 88,
+      "stereo_excluded": 0,
+      "native_both_gate_decisions_different": 0,
+      "compared_to_reference": 88,
+      "fit_to_midpoint_rmse_m": 0.18105685792405102,
+      "dlt_vs_midpoint_rmse_m": 0.0010858495663641351,
+      "dlt_vs_midpoint_max_m": 0.003699068463546163,
+      "fit_to_dlt_rmse_m": 0.18032261163452326
+    },
+    {
+      "trial": "003",
+      "source_frame_ids": [
+        0,
+        83
+      ],
+      "paired_source_frames": 84,
+      "decoded_frames_left": 84,
+      "decoded_frames_right": 84,
+      "right_visible": 84,
+      "scored_right": 84,
+      "right_unscored": 0,
+      "right_native_rmse_px": 17.322307823814757,
+      "max_native_prediction_difference_px": 4.7536223115214505e-07,
+      "max_csv_to_decoded_pts_error_s": 1.1102230246251565e-16,
+      "stereo_accepted": 84,
+      "stereo_excluded": 0,
+      "native_both_gate_decisions_different": 0,
+      "compared_to_reference": 84,
+      "fit_to_midpoint_rmse_m": 0.1816968838781441,
+      "dlt_vs_midpoint_rmse_m": 0.0015992785727715689,
+      "dlt_vs_midpoint_max_m": 0.006070503639875839,
+      "fit_to_dlt_rmse_m": 0.18131843179733545
+    }
+  ]
+}

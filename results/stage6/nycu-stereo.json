@@ -1,0 +1,219 @@
+{
+  "source": "NYCU Shuttlecock Trajectories Dataset, vicon_dataset (two synchronized 120 Hz camera videos per flight)",
+  "source_url": "https://drive.google.com/drive/folders/1KaPYvxVkpDieZUxfACg5bTdc8senjDDC",
+  "protocol": "First three numbered trials specified before reconstruction. Each is a separate recorded flight. Full source clips. Fixed-drag MAP selected on the Fuzhou development rallies. No NYCU tuning, player constraints or right-view alignment. The left and right source labels are independently collected native pixels.",
+  "timebase": "Authors' synchronized frame counters and equal timestamps. No clock fit; the timing SD of 1/sqrt(12) frames is a scenario for the triangulation error budget, not a measured synchronization accuracy.",
+  "geometry": "Published metric world-to-camera extrinsic_mat, ks and five OpenCV distortion coefficients. Left-fit pixel units use a centred square-pixel virtual image with focal length sqrt(fx*fy); left native and all right-view scores use original distorted images.",
+  "reference": "Recomputed two-camera ray-midpoint reference shares left labels with the fit. The 6px per-view consistency gate uses rectified left and native right pixel coordinates. Reference uncertainty propagates assumed 2.5px localization and clock jitter, conditional on the published calibration. Vicon has a separate time origin, so neither Vicon nor Model3D is used to fit or score.",
+  "denominator": "Every labelled right frame in the left-defined clip is counted. All projectable pre-impact predictions, including off-image predictions, enter B RMSE. Failed projections and timestamps after predicted landing are counted separately.",
+  "selected_trials": [
+    "001",
+    "002",
+    "003"
+  ],
+  "failures": {},
+  "trials": [
+    {
+      "clock": {
+        "method": "published_shared",
+        "scale_b_to_a": 1.0,
+        "offset_a_s": 0.0,
+        "fit_anchors": 0,
+        "check_anchors": 0,
+        "fit_anchor_range_b_s": null,
+        "fit_rmse_s": null,
+        "check_rmse_s": null
+      },
+      "launch_a_s": 0.0,
+      "stop_a_s": 0.8083333333333335,
+      "model": "fixed_drag_map",
+      "a_fit_k_m_inv": 0.217,
+      "player_xy_m": null,
+      "receiver_xy_m": null,
+      "a_training_points": 98,
+      "a_fit_theta": [
+        0.30270216535751715,
+        2.894330764766779,
+        1.9738584750652457,
+        -0.7082078689711944,
+        -7.270261421151429,
+        1.0589851068486407
+      ],
+      "predicted_landing_s": 0.830865463356145,
+      "a_fit_rmse_px": 1.4459192839949027,
+      "b_held_out_points": 98,
+      "b_sync_extrapolated": null,
+      "prediction_counts": {
+        "projected": 98
+      },
+      "b_rmse_px": 18.860371410278017,
+      "camera_baseline_m": 1.1506380015878594,
+      "reference_counts": {
+        "triangulated": 98
+      },
+      "accepted_angle_range_deg": [
+        10.000665890236172,
+        19.00889702173688
+      ],
+      "a_fit_to_stereo_compared": 98,
+      "a_fit_to_stereo_rmse_m": 0.2109827721704643,
+      "reference_pixel_rms_m": 0.06311113023770872,
+      "reference_clock_rms_m": 0.004863912974868324,
+      "reference_combined_rms_m": 0.06329828125082168,
+      "reference_uncertainty_count": 98,
+      "sigma_a_px": 2.5,
+      "sigma_b_px": 2.5,
+      "sync_sigma_s": 0.0024056261216234406,
+      "max_gap_a_s": 0.0125,
+      "min_angle_deg": 2.0,
+      "max_pair_reprojection_px": 6.0,
+      "trial": "001",
+      "n_frames": 98,
+      "source_fingerprint_sha256": "52de7c53efe21b0d728bbf1eecf854e109d7112bfbdad71ccfca9f1272a2e00c",
+      "a_native_rmse_px": 1.379146252303114,
+      "b_scored_points": 98,
+      "b_scored_out_of_image": 0,
+      "b_median_px": 14.367192600571142,
+      "b_max_px": 34.2320480503826,
+      "median_ray_angle_deg": 13.8983558564312
+    },
+    {
+      "clock": {
+        "method": "published_shared",
+        "scale_b_to_a": 1.0,
+        "offset_a_s": 0.0,
+        "fit_anchors": 0,
+        "check_anchors": 0,
+        "fit_anchor_range_b_s": null,
+        "fit_rmse_s": null,
+        "check_rmse_s": null
+      },
+      "launch_a_s": 0.0,
+      "stop_a_s": 0.7250000000000001,
+      "model": "fixed_drag_map",
+      "a_fit_k_m_inv": 0.217,
+      "player_xy_m": null,
+      "receiver_xy_m": null,
+      "a_training_points": 88,
+      "a_fit_theta": [
+        -0.07506151380132946,
+        2.521080650310589,
+        1.2346373102085182,
+        -0.7443452307925926,
+        -6.07553083575606,
+        1.828467158841524
+      ],
+      "predicted_landing_s": 0.7494284003132519,
+      "a_fit_rmse_px": 1.0680670586996075,
+      "b_held_out_points": 88,
+      "b_sync_extrapolated": null,
+      "prediction_counts": {
+        "projected": 88
+      },
+      "b_rmse_px": 13.161740029491895,
+      "camera_baseline_m": 1.1506380015878594,
+      "reference_counts": {
+        "triangulated": 88
+      },
+      "accepted_angle_range_deg": [
+        11.02267970068464,
+        17.86715266138199
+      ],
+      "a_fit_to_stereo_compared": 88,
+      "a_fit_to_stereo_rmse_m": 0.18105682752611238,
+      "reference_pixel_rms_m": 0.058486786488358956,
+      "reference_clock_rms_m": 0.005271717811457992,
+      "reference_combined_rms_m": 0.05872388953755134,
+      "reference_uncertainty_count": 88,
+      "sigma_a_px": 2.5,
+      "sigma_b_px": 2.5,
+      "sync_sigma_s": 0.0024056261216234406,
+      "max_gap_a_s": 0.0125,
+      "min_angle_deg": 2.0,
+      "max_pair_reprojection_px": 6.0,
+      "trial": "002",
+      "n_frames": 88,
+      "source_fingerprint_sha256": "2e0828ecd447dce1bf1ad03332f2bd06887f2859da6517f2d3a0179b5a5da9cd",
+      "a_native_rmse_px": 1.020731155876539,
+      "b_scored_points": 88,
+      "b_scored_out_of_image": 0,
+      "b_median_px": 10.666567055137936,
+      "b_max_px": 25.18405426735569,
+      "median_ray_angle_deg": 14.224970641275615
+    },
+    {
+      "clock": {
+        "method": "published_shared",
+        "scale_b_to_a": 1.0,
+        "offset_a_s": 0.0,
+        "fit_anchors": 0,
+        "check_anchors": 0,
+        "fit_anchor_range_b_s": null,
+        "fit_rmse_s": null,
+        "check_rmse_s": null
+      },
+      "launch_a_s": 0.0,
+      "stop_a_s": 0.6916666666666668,
+      "model": "fixed_drag_map",
+      "a_fit_k_m_inv": 0.217,
+      "player_xy_m": null,
+      "receiver_xy_m": null,
+      "a_training_points": 84,
+      "a_fit_theta": [
+        0.26820330903955253,
+        2.4946843853412966,
+        1.4645381582738641,
+        -0.5826673354461562,
+        -6.92660739291373,
+        1.0133106967008738
+      ],
+      "predicted_landing_s": 0.7147514944525162,
+      "a_fit_rmse_px": 1.169626628023134,
+      "b_held_out_points": 84,
+      "b_sync_extrapolated": null,
+      "prediction_counts": {
+        "projected": 84
+      },
+      "b_rmse_px": 17.322307846130954,
+      "camera_baseline_m": 1.1506380015878594,
+      "reference_counts": {
+        "triangulated": 84
+      },
+      "accepted_angle_range_deg": [
+        10.564855417103729,
+        18.701825296754603
+      ],
+      "a_fit_to_stereo_compared": 84,
+      "a_fit_to_stereo_rmse_m": 0.18169687863614511,
+      "reference_pixel_rms_m": 0.05967369819360798,
+      "reference_clock_rms_m": 0.004681383760410361,
+      "reference_combined_rms_m": 0.05985704311118322,
+      "reference_uncertainty_count": 84,
+      "sigma_a_px": 2.5,
+      "sigma_b_px": 2.5,
+      "sync_sigma_s": 0.0024056261216234406,
+      "max_gap_a_s": 0.0125,
+      "min_angle_deg": 2.0,
+      "max_pair_reprojection_px": 6.0,
+      "trial": "003",
+      "n_frames": 84,
+      "source_fingerprint_sha256": "ebf52d67ab7803e545e2369f2ee85a97f06fd7c33f507d09c20778b73fcb2a33",
+      "a_native_rmse_px": 1.1391989179295106,
+      "b_scored_points": 84,
+      "b_scored_out_of_image": 0,
+      "b_median_px": 11.417121162093258,
+      "b_max_px": 32.416591833531164,
+      "median_ray_angle_deg": 14.263852527772006
+    }
+  ],
+  "pooled": {
+    "completed_trials": 3,
+    "frames": 270,
+    "b_labelled": 270,
+    "b_scored": 270,
+    "b_rmse_px": 16.701023957607518,
+    "compared_to_stereo": 270,
+    "a_fit_to_stereo_rmse_m": 0.19264513159287783,
+    "a_native_rmse_px": 1.1973734906775133
+  }
+}
