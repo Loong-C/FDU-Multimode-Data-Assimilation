@@ -164,6 +164,13 @@ class _Proposal:
         return float(logsumexp(self.constants+kernel))
 
 
+def ridge_proposal(model, fit):
+    """Construct the Student-t proposal along competitive conditional MAP ridges."""
+    factor = _scaled_factor(fit.cov)
+    centres, _ = _mode_centres(fit, factor)
+    return _Proposal(model, fit, centres, factor)
+
+
 def sample_posterior(model, fit=None, *, seed=5201, chains=4, warmup=400, draws=800):
     """Draw from model.log_prob in native coordinates, including log drag when estimated.
 
