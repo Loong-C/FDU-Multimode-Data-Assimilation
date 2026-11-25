@@ -1,0 +1,56 @@
+{
+  "primary_model": "fixed_drag",
+  "development_rule": "minimum mean per-stroke held-out pixel RMS; fixed wins a tie",
+  "development_ids": [
+    "1_03_02_07",
+    "1_03_02_08"
+  ],
+  "test_ids": [
+    "2_02_05_01",
+    "2_02_05_04",
+    "3_18_17_11",
+    "3_18_17_13",
+    "3_18_17_14",
+    "3_18_17_17",
+    "3_18_17_18"
+  ],
+  "sigma_px": 2.5,
+  "foot_proxy_sigma_m": 1.0,
+  "development_comparison": {
+    "fixed_drag": {
+      "per_stroke_holdout_rmse_px": [
+        2.2988773001576166,
+        1.786533282024957
+      ],
+      "mean": 2.042705291091287
+    },
+    "joint_drag": {
+      "per_stroke_holdout_rmse_px": [
+        2.50208854529483,
+        2.5418941921510587
+      ],
+      "mean": 2.5219913687229445
+    }
+  },
+  "summary": {
+    "development": {
+      "shots": 2,
+      "heldout_pixels": 9,
+      "heldout_rmse_px": 2.141757444261045,
+      "median_shot_holdout_rmse_px": 2.042705291091287,
+      "physics_pass": 2
+    },
+    "test": {
+      "shots": 7,
+      "heldout_pixels": 36,
+      "heldout_rmse_px": 4.538231222188335,
+      "median_shot_holdout_rmse_px": 2.2765141113869976,
+      "physics_pass": 3
+    }
+  },
+  "flight_end": "Next racket contact; its ground-plane foot proxy is soft. No landing time/position was assumed.",
+  "physics_screen": "Post-fit consistency: cross x=0 between posts above the nominal net, both contacts on the respective players' halves, both heights between 0.15 and 4 m. The height interval is a screening convention.",
+  "uncertainty": "Local curvature conditions on the model, A-camera and contact times; it ignores physical truncation at boundaries. posterior.csv reports conditional 5th to 95th percentiles only for chains with max rank R-hat <1.01 and min bulk/tail ESS >=400. The fixed k, if selected, has no data-estimated interval.",
+  "sensitivity": "Separate refits. Camera jitter perturbs training landmarks only. Time jitter shifts the first contact, fixes the next, and compares shared original timestamps.",
+  "synthetic_control": "Conditional on the real MAP launch; DOP853, same camera/timestamps/visibility split, new 2.5 px Gaussian detections and 1 m foot proxies. 3D errors refer to this synthetic model only."
+}

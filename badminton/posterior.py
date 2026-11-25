@@ -134,6 +134,7 @@ class PosteriorModel:
         if not (np.isfinite(k_prior_median) and k_prior_median > 0 and np.isfinite(log_k_sd) and log_k_sd > 0):
             raise ValueError("Positive finite median k and log-k prior deviation are required")
         self.camera, self.times, self.uv, self.fixed_k = camera, times[valid], uv[valid], fixed_k
+        self.airborne_until = self.times[-1]
         self.mean, self.std = PRIOR_MEAN.copy(), PRIOR_STD.copy()
         self.lower, self.upper = LOWER.copy(), UPPER.copy()
         if fixed_k is None:
@@ -226,7 +227,7 @@ class MAP:
     condition: float
 
 
-def fit_map(model):
+def fit_map(model, *, max_nfev=180):
     """Multistart MAP and Gauss–Newton covariance in the original parameter coordinates.
 
     condition is the Gauss–Newton precision condition number in prior-standardized
@@ -235,7 +236,7 @@ def fit_map(model):
     starts = []
     for i, seed6 in enumerate(_seeds(model.camera, model.times, model.uv)):
         seed = seed6 if model.fixed_k is not None else np.r_[seed6, model.mean[-1]+(i-1)*model.std[-1]]
-        options = dict(x_scale=model.std, diff_step=1e-5, ftol=2e-9, xtol=2e-9, gtol=1e-7, max_nfev=180)
+        options = dict(x_scale=model.std, diff_step=1e-5, ftol=2e-9, xtol=2e-9, gtol=1e-7, max_nfev=max_nfev)
         opt = least_squares(model.residual, seed, bounds=(model.lower, model.upper), **options)
         x = opt.x
         if model.final_height(x) < -1e-9:
@@ -247,7 +248,7 @@ def fit_map(model):
                 state = p.copy()
                 low_v, high_v = model.lower[5], model.upper[5]
                 if model.fixed_k == 0:
-                    t = model.times[-1]
+                    t = model.airborne_until
                     minimum = np.clip(.5*GRAVITY*t-state[2]/t, low_v, high_v)
                 else:
                     def height(vz):

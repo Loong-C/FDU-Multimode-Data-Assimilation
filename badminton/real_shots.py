@@ -151,7 +151,7 @@ def prepare_shots(rally, selection, info, fps, camera, video):
                 raise ValueError(f"Unexpected source frame mapping in {rally} at {i}")
             label = original.get(i)
             # Preserve explicitly missing and absent labels separately in the provenance.
-            visible = label is not None and int(label["Visibility"]) > 0 and (int(label["X"]), int(label["Y"])) != (0, 0)
+            visible = label is not None and int(label["Visibility"]) == 1
             uv = (int(label["X"]), int(label["Y"])) if visible else ("", "")
             if tuple(str(v) for v in uv) != (row["x_px"], row["y_px"]):
                 raise ValueError(f"Stage-one coordinates differ from released CSV: {rally} frame {i}")
@@ -175,7 +175,57 @@ def prepare_shots(rally, selection, info, fps, camera, video):
     return shots, observations
 
 
-def build(out):
+def review_sheets(shots, directory):
+    """Render local inspection sheets directly from the source video, with no fitted tracks."""
+    directory.mkdir(parents=True, exist_ok=True)
+    for shot in shots:
+        rally, fps = shot["rally_id"], shot["fps"]
+        labels = indexed_csv(STAGE1 / rally / "frames.csv", "frame_index")
+        capture = cv2.VideoCapture(str(ROOT / shot["source_video"]))
+        start, end = shot["start_frame"], shot["end_frame_exclusive"]
+        contact_rows, centres = [[], []], []
+        try:
+            capture.set(cv2.CAP_PROP_POS_FRAMES, start-2)
+            for frame in range(start-2, end+3):
+                ok, image = capture.read()
+                if not ok:
+                    raise ValueError(f"Missing review image for {rally} at {frame}")
+                h, w = image.shape[:2]
+                label = labels[frame]
+                uv = None
+                if label["x_px"]:
+                    uv = tuple(int(label[k]) for k in ("x_px", "y_px"))
+                    cv2.circle(image, uv, 8, (0, 230, 220), 1, cv2.LINE_AA)
+                if start <= frame < end:
+                    tile = np.full((64, 64, 3), 30, dtype=np.uint8)
+                    if uv is not None:
+                        x, y = np.clip(np.asarray(uv)-32, [0, 0], [w-64, h-64])
+                        tile = image[y:y+64, x:x+64].copy()
+                    cv2.putText(tile, str(frame), (2, 12), cv2.FONT_HERSHEY_SIMPLEX, .37, (255, 255, 255), 1)
+                    centres.append(tile)
+                for j, (boundary, proxy) in enumerate(((start, shot["player_uv_px"]), (end, shot["receiver_uv_px"]))):
+                    if abs(frame-boundary) <= 2:
+                        # Keep the camera crop fixed across the five frames. Include both the
+                        # player's feet and overhead racket even when a nearby label is missing.
+                        x, y = np.clip(np.rint(proxy).astype(int)-[145, 240], [0, 0], [w-290, h-266])
+                        tile = image[y:y+266, x:x+290].copy()
+                        marker = tuple(np.rint(proxy).astype(int)-[x, y])
+                        cv2.drawMarker(tile, marker, (0, 140, 255), cv2.MARKER_CROSS, 10, 1)
+                        cv2.putText(tile, f"{frame} / {frame/fps:.2f}s", (3, 16), 0, .48, (0, 255, 255), 1)
+                        contact_rows[j].append(tile)
+        finally:
+            capture.release()
+        columns = min(10, len(centres))
+        centres.extend(np.zeros_like(centres[0]) for _ in range((-len(centres)) % columns))
+        contact_sheet = np.vstack([np.hstack(row) for row in contact_rows])
+        centre_sheet = np.vstack([np.hstack(centres[i:i+columns]) for i in range(0, len(centres), columns)])
+        for suffix, sheet in (("contacts", contact_sheet), ("centres", centre_sheet)):
+            path = directory / f"{shot['shot_id']}-{suffix}.jpg"
+            if not cv2.imwrite(str(path), sheet):
+                raise OSError(f"Could not write {path}")
+
+
+def build(out, review_dir=None):
     config = read_json(STAGE6_CONFIG)
     manifest = read_json(STAGE1 / "manifest.json")
     geometry = read_json(ROOT / "configs/stage3-fuzhou.json")
@@ -206,9 +256,13 @@ def build(out):
                "foot_proxy": "ShuttleSet player-location image annotations at each player's own stroke, intersected with the floor plane. Position is a weak contact proxy affected by reach, lunges and jumping; independent metre-scale contact/landing measurements are unavailable.",
                "shots": shots})
     write_rows(out/"observations.csv", observations)
+    if review_dir is not None:
+        review_sheets(shots, review_dir)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=ROOT/"results/stage6")
-    build(parser.parse_args().out)
+    parser.add_argument("--review-dir", type=Path, help="write local per-frame centre and contact sheets from the original clips")
+    args = parser.parse_args()
+    build(args.out, args.review_dir)

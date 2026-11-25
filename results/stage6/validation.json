@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source_videos_hash_verified": 3,
+  "strokes": 9,
+  "decoded_source_and_replay_frames": 218,
+  "observations_by_role": {
+    "missing": 42,
+    "holdout": 45,
+    "fit": 131
+  },
+  "test_strokes_refit_with_heldout_pixels_removed": 7,
+  "max_differences": {
+    "reference_state_abs": 8.989981381546386e-08,
+    "reference_projection_px": 1.6043557359278766e-06,
+    "replay_frame_mean_abs_8bit": 2.219555035128806
+  }
+}
